@@ -1,0 +1,24 @@
+# Template - install.sh fills in @USER@, @DIR@ and @NODE@ and installs it
+# as /etc/systemd/system/flowiq-cam2mqtt.service
+[Unit]
+Description=Kamstrup flowIQ water meter camera reader -> MQTT
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=@USER@
+WorkingDirectory=@DIR@
+ExecStart=@NODE@ src/cli.js loop
+Restart=always
+RestartSec=15
+# The loop switches the LED off on SIGTERM; give it time for the HA call.
+TimeoutStopSec=20
+Environment=NODE_ENV=production
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

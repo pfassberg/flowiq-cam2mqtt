@@ -1,0 +1,17 @@
+{
+  "name": "flowiq-cam2mqtt",
+  "version": "0.1.0",
+  "description": "Read a Kamstrup flowIQ water meter LCD from a camera and publish to Home Assistant",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "capture": "node src/cli.js capture",
+    "read": "node src/cli.js read",
+    "loop": "node src/cli.js loop"
+  },
+  "dependencies": {
+    "jpeg-js": "^0.4.4",
+    "mqtt": "^5.16.0"
+  }
+}

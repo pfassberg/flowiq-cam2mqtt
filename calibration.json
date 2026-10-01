@@ -1,0 +1,36 @@
+{
+  "_comment": "Pixel coordinates in reference.jpeg. Each digit: x0/x1 = outer left/right edge, y0/y1 = centre line of the top/bottom segment. 'align' is the area used to find how far a new frame has shifted.",
+  "reference": "reference.jpeg",
+  "align": {
+    "x": 680,
+    "y": 690,
+    "w": 490,
+    "h": 175
+  },
+  "maxShift": 60,
+  "fields": {
+    "volume": {
+      "decimals": 3,
+      "digits": [
+        { "x0": 704, "x1": 747, "y0": 711, "y1": 785 },
+        { "x0": 759, "x1": 800, "y0": 711, "y1": 784 },
+        { "x0": 812, "x1": 852, "y0": 710, "y1": 783 },
+        { "x0": 864, "x1": 903, "y0": 710, "y1": 782 },
+        { "x0": 915, "x1": 952, "y0": 709, "y1": 781 },
+        { "x0": 963, "x1": 1000, "y0": 709, "y1": 780 },
+        { "x0": 1011, "x1": 1048, "y0": 707, "y1": 778 },
+        { "x0": 1059, "x1": 1096, "y0": 707, "y1": 777 },
+        { "x0": 1108, "x1": 1145, "y0": 705, "y1": 776 }
+      ]
+    },
+    "flow": {
+      "decimals": 0,
+      "digits": [
+        { "x0": 704, "x1": 725, "y0": 809, "y1": 850 },
+        { "x0": 734, "x1": 757, "y0": 809, "y1": 850 },
+        { "x0": 767, "x1": 786, "y0": 809, "y1": 850 },
+        { "x0": 795, "x1": 816, "y0": 809, "y1": 850 }
+      ]
+    }
+  }
+}
